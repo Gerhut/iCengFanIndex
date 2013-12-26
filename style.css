@@ -1,0 +1,25 @@
+nav li {
+  cursor: pointer;
+}
+
+nav h2 {
+  margin: 0;
+}
+
+#knowledge li {
+  padding: 10px;
+}
+
+#knowledge div {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#knowledge h3 {
+  border-bottom: 1px solid black;
+}
+
+footer h4 {
+  text-decoration: underline;
+}
