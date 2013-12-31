@@ -1,25 +1,58 @@
-nav li {
-  cursor: pointer;
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "微软雅黑", "Microsoft YaHei";
 }
 
-nav h2 {
+h1 {
   margin: 0;
 }
 
-#knowledge li {
+h1 small {
+  font-size: 15px;
+}
+
+nav {
+  margin-top: 20px;
+}
+
+nav img {
+  display: block;
+  margin: auto;
+}
+
+nav li {
+  line-height: 2;
+}
+
+.carousel-inner>.item {
+  height: 400px;
+  width: 100%;
+}
+
+.carousel-inner {
+  overflow: visible;
+}
+
+.carousel button {
+  position:absolute;
+  bottom: -20px;
+  left: 50%;
+  width: 250px;
+  margin-left: -125px;
+}
+
+#collection li {
+  position: relative;
+  background-color: red;
+  background-clip: content-box;
   padding: 10px;
+  height: 195px;
 }
 
-#knowledge div {
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-#knowledge h3 {
-  border-bottom: 1px solid black;
-}
-
-footer h4 {
-  text-decoration: underline;
+#collection div {
+  background-color: rgba(0,0,0,.5);
+  color: white;
+  width: 80%;
+  top: 50%;
+  padding-left: 1em;
+  position: relative;
 }

@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
   <meta charset="utf-8">
-  <title>蹭饭网 - 好好吃饭。因为，活着，才有未来。</title>
+  <title>爱蹭饭 - 好好吃饭。因为，活着，才有未来。</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
@@ -14,75 +14,81 @@
   <body>
     <header class="container page-header">
       <div class="row">
-        <h1 class="col-sm-3 text-center">蹭饭网</h1>
+        <h1 class="col-sm-3 text-center">
+          <img src="logo.png" alt="爱蹭饭" width="100%">
+          <small>好好吃饭。因为，活着，才有未来。</small>
+        </h1>
         <nav class="col-sm-9 container-fluid">
           <ul class="row list-unstyled">
-            <li id="to-index" class="col-xs-4 text-center">
-              <img class="img-circle" width="50" height="50">
-              <h2><small>主页</small></h2>
+            <li class="col-xs-3 text-center">
+              <img src="download.png" alt="下载应用" width="50" height="50">
+              <small>下载应用</small>
             </li>
-            <li id="to-product" class="col-xs-4 text-center">
-              <img class="img-circle" width="50" height="50">
-              <h2><small>产品</small></h2>
+            <li class="col-xs-3 text-center">
+              <img src="guide.png" alt="蹭饭指南" width="50" height="50">
+              <small>蹭饭指南</small>
             </li>
-            <li id="to-knowledge" class="col-xs-4 text-center">
-              <img class="img-circle" width="50" height="50">
-              <h2><small>干货</small></h2>
+            <li class="col-xs-3 text-center">
+              <img src="rank.png" alt="美食达人" width="50" height="50">
+              <small>美食达人</small>
+            </li>
+            <li class="col-xs-3 text-center">
+              <img src="about.png" alt="关于我们" width="50" height="50">
+              <small>关于我们</small>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <section class="container-fluid">
-      <img width="100%" height="400">
+    <section class="container-fluid carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active" style="background: url(scroller1.jpg) center; background-size: cover;">
+          <button class="btn btn-warning btn-lg">爷请点击这里</button>
+        </div>
+        <div class="item" style="background: url(scroller1.jpg) center; background-size: cover;">
+          <button class="btn btn-warning btn-lg">私家菜点这里</button>
+        </div>
+        <div class="item" style="background: url(scroller1.jpg) center; background-size: cover;">
+          <button class="btn btn-warning btn-lg">看看周围有哪些你爱吃的？</button>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
     </section>
-    <section id="knowledge" class="container">
-      <h2>干货区</h2>
+    <section id="collection" class="container">
+      <h2><span class="glyphicon glyphicon-cutlery"></span> 爱蹭饭精选</h2>
       <ul class="row list-unstyled">
-        <li class="col-xs-12 col-sm-6 col-md-4">
-          <div>
-            <h3>红茶防治流感</h3>
-            <img height="200">
-          </div>
+        <li class="col-xs-6 col-sm-4 col-md-2">
+          <div>菜名1<br><small>6447人喜欢</small></div>
         </li>
-        <li class="col-xs-12 col-sm-6 col-md-4">
-          <div>
-            <h3>维生素B<sub>6</sub>防治流感</h3>
-            <img height="200">
-          </div>
+        <li class="col-xs-6 col-sm-4 col-md-2">
+          <div>菜名2<br><small>2008人喜欢</small></div>
         </li>
-        <li class="col-xs-12 col-sm-6 col-md-4">
-          <div>
-            <h3>牛奶防治支气管炎</h3>
-            <img height="200">
-          </div>
+        <li class="col-xs-6 col-sm-4 col-md-2">
+          <div>菜名3<br><small>6111人喜欢</small></div>
         </li>
-        <li class="col-xs-12 col-sm-6 col-md-4">
-          <div>
-            <h3>蜂王浆防治关节炎</h3>
-            <img height="200">
-          </div>
+        <li class="col-xs-6 col-sm-4 col-md-2">
+          <div>菜名4<br><small>3101人喜欢</small></div>
         </li>
-        <li class="col-xs-12 col-sm-6 col-md-4">
-          <div>
-            <h3>苦瓜清热解毒</h3>
-            <img height="200">
-          </div>
+        <li class="col-xs-6 col-sm-4 col-md-2">
+          <div>菜名5<br><small>1268人喜欢</small></div>
         </li>
-        <li class="col-xs-12 col-sm-6 col-md-4">
-          <div>
-            <h3>菠菜防治视网膜退化</h3>
-            <img height="200">
-          </div>
+        <li class="col-xs-6 col-sm-4 col-md-2">
+          <div>菜名6<br><small>8621人喜欢</small></div>
         </li>
       </ul>
     </section>
-    <footer class="container">
-      <h4>好好吃饭。因为，活着，才有未来。</h4>
-    </footer>
-    <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-    <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <script src="http://cdn.bootcss.com/jquery-scrollTo/1.4.3/jquery.scrollTo.min.js"></script>
+    <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.js"></script>
+    <script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/js/bootstrap.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
