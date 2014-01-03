@@ -1,11 +1,17 @@
 $(function () {
-  var $body = $('body')
-    , $header = $('header')
-    , $carouselItem = $('.carousel .item');
+  var $body = $('body');
+  var $header = $('header');
+  var $carouselItem = $('.carousel .item');
+  var timeout = -1;
+  
   function dynamicLayout() {
-    $body.css('margin-top', $header.height());
-    $header.css('margin-left', -$header.outerWidth() / 2 + 'px');
-    $carouselItem.height($body.width() / 2);
+    function work () {
+      $body.css('margin-top', $header.height());
+      $carouselItem.height($body.width() / 2);
+      timeout = -1;
+    }
+    if (timeout == -1)
+      timeout = setTimeout(work, 500);
   }
   $(dynamicLayout);
   $(window).on('resize', dynamicLayout);
