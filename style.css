@@ -35,12 +35,9 @@ nav li {
   height: 100%;
 }
 
-.carousel-control {
+.carousel-control span {
   font-size: 70px;
-}
-
-.carousel-indicators {
-  bottom: 50px;
+  margin-top: -35px;
 }
 
 .carousel-inner>.item {
