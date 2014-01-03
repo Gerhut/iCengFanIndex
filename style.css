@@ -68,11 +68,15 @@ nav li {
   height: 195px;
 }
 
-#collection div {
+#collection li div {
   background-color: rgba(0,0,0,.5);
   color: white;
   width: 80%;
   top: 50%;
   padding-left: 1em;
   position: relative;
+}
+
+#downloads p {
+  padding-top: 10px;
 }
