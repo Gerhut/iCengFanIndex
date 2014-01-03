@@ -3,10 +3,10 @@ $(function () {
   var $header = $('header');
   var $carouselItem = $('.carousel .item');
   var timeout = -1;
-  
+
   function dynamicLayout() {
     function work () {
-      $body.css('margin-top', $header.height());
+      $body.css('margin-top', 10 + $header.height() + 'px');
       $carouselItem.height($body.width() / 2);
       timeout = -1;
     }
