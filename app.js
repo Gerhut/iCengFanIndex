@@ -7,11 +7,10 @@ $(function () {
   function dynamicLayout() {
     function work () {
       $body.css('margin-top', 10 + $header.height() + 'px');
-      $carouselItem.height($body.width() / 2.67);
       timeout = -1;
     }
     if (timeout == -1)
-      timeout = setTimeout(work, 500);
+      timeout = setTimeout(work, 300);
   }
   $(dynamicLayout);
   $(window).on('resize', dynamicLayout);
