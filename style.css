@@ -2,6 +2,14 @@ body, h1, h2, h3, h4, h5, h6 {
   font-family: "微软雅黑", "Microsoft YaHei";
 }
 
+header {
+  position: fixed;
+  left: 50%;
+  top: 0;
+  background-color: rgba(255, 255, 255, .8);
+  z-index:1;
+}
+
 h1 {
   margin: 0;
 }
@@ -23,15 +31,23 @@ nav li {
   line-height: 2;
 }
 
+.carousel-inner, .carousel-inner .item {
+  height: 100%;
+}
+
+.carousel-control {
+  font-size: 70px;
+}
+
 .carousel-indicators {
   bottom: 50px;
 }
 
 .carousel-inner>.item {
-  height: 400px;
   width: 100%;
-  background-position: center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
   background-clip: content-box;
   border-bottom: 23px solid white;
 }
